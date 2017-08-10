@@ -38,7 +38,7 @@ namespace kaleidoscope {
 class Hardware {
  public:
   /**
-   * @defgroup kaleidoscope_hardware_leds LEDs
+   * @defgroup kaleidoscope_hardware_leds Kaleidoscope::Hardware/LEDs
    * @{
    */
   /**
@@ -82,7 +82,7 @@ class Hardware {
   }
   /** @} */
 
-  /** @defgroup kaleidoscope_hardware_matrix Matrix
+  /** @defgroup kaleidoscope_hardware_matrix Kaleidoscope::Hardware/Matrix
    * @{
    */
   virtual void scanMatrix(void) = 0;
@@ -90,7 +90,7 @@ class Hardware {
   virtual void actOnMatrixScan(void) = 0;
   /** @} */
 
-  /** @defgroup kaleidoscope_hardware_masking Key masking
+  /** @defgroup kaleidoscope_hardware_masking Kaleidoscope::Hardware/Key masking
    *
    * Sometimes there are situations when one wants to ignore key events for a
    * while, to mask them out. Masked keys will be ignored until they are
@@ -133,7 +133,7 @@ class Hardware {
   /** @} */
 
   /**
-   * @defgroup kaleidoscope_hardware_misc Miscellaneous methods
+   * @defgroup kaleidoscope_hardware_misc Kaleidoscope::Hardware/Miscellaneous methods
    * @{
    */
   /**
