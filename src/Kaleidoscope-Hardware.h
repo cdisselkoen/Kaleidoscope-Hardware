@@ -75,9 +75,10 @@ class Hardware {
    * @returns The color at the given position.
    */
   virtual cRGB getCrgbAt(uint8_t i) {
-    return (cRGB) {
+    cRGB c = {
       0, 0, 0
-    }
+    };
+    return c;
   }
   /** @} */
 
