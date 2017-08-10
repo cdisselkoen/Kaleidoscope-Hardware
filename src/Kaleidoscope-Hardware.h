@@ -88,7 +88,10 @@ class Hardware {
   /**
    * Scan the keyboard matrix, and act on it.
    */
-  virtual void scanMatrix(void) = 0;
+  virtual void scanMatrix(void) {
+    readMatrix();
+    actOnMatrixScan();
+  }
   /**
    * Read the state of the keyboard matrix.
    *
