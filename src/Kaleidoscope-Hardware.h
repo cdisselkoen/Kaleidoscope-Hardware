@@ -17,6 +17,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+/** @file Kaleidoscope-Hardware.h
+ * Base class for Kaleidoscope hardware libraries.
+ */
+
 #pragma once
 
 /**
