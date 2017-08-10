@@ -85,8 +85,24 @@ class Hardware {
   /** @defgroup kaleidoscope_hardware_matrix Kaleidoscope::Hardware/Matrix
    * @{
    */
+  /**
+   * Scan the keyboard matrix, and act on it.
+   */
   virtual void scanMatrix(void) = 0;
+  /**
+   * Read the state of the keyboard matrix.
+   *
+   * Do whatever is necessary to read the current keyboard state - but without
+   * acting on it.
+   *
+   * This is primarily used by @ref scanMatrix, but may have other uses too.
+   */
   virtual void readMatrix(void) = 0;
+  /**
+   * Act on the scanned keyboard matrix.
+   *
+   * Iterate through the scanned state (@see readMatrix), and act on any events.
+   */
   virtual void actOnMatrixScan(void) = 0;
   /** @} */
 
