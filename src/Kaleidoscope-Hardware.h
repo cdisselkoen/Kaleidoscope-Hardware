@@ -32,6 +32,12 @@
  *
  * The structure will need to have at least three members: r, g, and b -
  * compilation will fail otherwise.
+ *
+ * Despite its name, the members do not need to be in the order r g b -- most
+ * likely they will be in an order that is convenient for the hardware. So
+ * initializing a cRGB with a struct literal will give surprising results for any
+ * colors where r, g, and b do not have the same value. Each Hardware library
+ * defines a CRGB(r,g,b) macro which returns a literal cRGB with the given values.
  */
 typedef struct cRGB cRGB;
 
