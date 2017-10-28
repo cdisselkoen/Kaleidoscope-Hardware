@@ -24,10 +24,8 @@
 #pragma once
 
 /* All hardware libraries must define the following macros:
- * KALEIDOSCOPE_HARDWARE_H - filename of the file Kaleidoscope should include for
- *     your hardware
- *   Should contain, at minimum, declarations of everything listed in this file
- *     as required
+ * HARDWARE_IMPLEMENTATION - the name of your public object conforming to
+ *   the 'class Hardware' interface below.
  * ROWS - the number of rows on the keyboard
  * COLS - the number of columns on the keyboard
  * LED_COUNT - the total number of LEDs on the keyboard (can be 0)
